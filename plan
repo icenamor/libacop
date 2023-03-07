@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#if [ $# -le 5 ]; then
+#	echo "Usage: "$0" -o <domain_file> -f <problem_file> -p <plan_file> [-k <DCK_folder>]"
+#	exit 1
+#else
+#	python2.7 "$(dirname "$0")"/src/launcher/solve.py "$@"
+#fi
+
+
+if [ $# -eq 3 ]; then
+	python2.7 "$(dirname "$0")"/src/launcher/solve.py "-o" "$1" "-f" "$2" "-p" "$3"
+
+elif [ $# -eq 4 ]; then
+	python2.7 "$(dirname "$0")"/src/launcher/solve.py "-o" "$1" "-f" "$2" "-p" "$3" "-k" "$4"
+
+else
+	echo "Usage: "$0" <domain_file> <problem_file> <result_file> [<DCK_folder>]"
+	exit 1
+fi
+

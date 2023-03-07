@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# -ne 6 ]; then
+	echo "Usage: "$0" -o <domain file> -t <training folder> -k <DCK folder>"
+	exit 1
+else
+	python2.7 "$(dirname "$0")"/src/learner/launcher/solve.py "$@"
+fi
+
+# learner -o <domain file> -t <training folder> -k <DCK folder>
+
+
