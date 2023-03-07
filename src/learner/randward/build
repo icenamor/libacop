@@ -1,0 +1,12 @@
+#!/bin/bash
+source /opt/centos/devtoolset-1.1/x86_64/enable
+
+cd "$(dirname "$0")"
+ROOT=$PWD
+
+cd $ROOT/preprocess/
+make
+cd $ROOT/search/
+make
+make release
+

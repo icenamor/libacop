@@ -1,0 +1,141 @@
+Planners in the sequential satisficing track
+============================================
+
+1. Fast Downward Autotune (satisficing version)
+   comes in two versions:
+   * seq-sat-fd-autotune-1
+   * seq-sat-fd-autotune-2
+
+2. Fast Downward Stone Soup (satisficing version)
+   comes in two versions:
+   * seq-sat-fdss-1
+   * seq-sat-fdss-2
+
+3. LAMA
+   comes in two versions:
+   * seq-sat-lama-2008
+   * seq-sat-lama-2011
+
+   (The first of these is the original LAMA search code, but with a
+   bugfixed version of the translator and preprocessor. The second is
+   more or less the same algorithm, but with our current, hopefully more
+   efficient implementation. There are also some small changes in search
+   strategy.)
+
+Planners in the sequential optimization track
+=============================================
+
+1. Fast Downward Autotune (optimal version)
+   comes in one version:
+   * seq-opt-fd-autotune
+
+2. Fast Downward Stone Soup (optimal version)
+   comes in two versions:
+   * seq-opt-fdss-1
+   * seq-opt-fdss-2
+
+3. Selective Max
+   comes in one version:
+   * seq-opt-selmax
+
+4. BJOLP (big joint optimal landmarks planner)
+   comes in one version:
+   * seq-opt-bjolp
+
+5. LM-cut
+   comes in one version:
+   * seq-opt-lmcut
+
+6. Merge-and-Shrink
+   comes in one version:
+   * seq-opt-merge-and-shrink
+
+
+PDDL support questionnaire
+==========================
+
+Planner names and tracks: see above.
+
+Team member list are preliminarily as in the registration email, but as
+I said if possible I'd like to amend this later to be sure not to forget
+anybody.
+
+Features:
+
+The planner supports '''object fluents''' in the following way (please
+remove all options apart from the one that applies):
+
+ * The planner only supports predicate representations, no object
+   fluent representations.
+
+The planner supports '''PDDL types''' in the following way (please
+remove all options apart from the one that applies):
+
+ * The planner supports both representations, and typed
+   representations are preferred.
+
+The planner supports '''grounded representations''' in the following way
+(please remove all options apart from the one that applies):
+
+ * The planner supports both representations, and representations with
+   schematic operators are preferred.
+
+The planner supports the following '''optional features''' (please
+remove all options that don't apply; multiple answers possible):
+
+Here, the answer is different for the different planners:
+
+Optimization track planners:
+
+ * The optimization track planners support none of these features.
+
+Sequential track planners:
+
+ * The planner supports negative preconditions in STRIPS operators and
+   in the goal specification.
+ * The planner supports general ADL conditions ({{{exists}}},
+   {{{forall}}}, {{{or}}}, ...) in operators and goals.
+ * The planner supports conditional effects ({{{when}}}) in operators.
+ * The planner supports universal effects ({{{forall}}}) in operators.
+ * The planner supports derived predicates.
+
+*However*, the support for all these features is *very* partial, and in
+most cases (but not all), STRIPS representations are much more suitable
+for the planner than ones that include e.g. conditional effects or
+negative conditions.
+
+
+Additional features you need to know about
+==========================================
+
+Anytime algorithms: All the sequential track planners are anytime.
+
+Randomized algorithms: The algorithms are not intentionally randomized,
+but unfortunately results can still vary from run to run due to some
+code that has unintended dependencies on arbitrary things like which of
+two objects lies first in memory. So results can be somewhat
+irreproducible, although that does not happen in very many domains.
+
+Other comments: All planners internally use timeouts for certain
+activities (e.g. invariant synthesis) that are tailored towards an
+overall 30 minute time limit, so they will *not work properly* with
+other time limits (shorter or longer). In particular, unfortunately I
+think we can't really use our planners for probing runs.
+
+This is especially true for the "Fast Downward Stone Soup" planners in
+both domains and for "Merge-and-Shrink", which are sequential portfolio
+planners. (That is, they first run algorithm A for T_A seconds, then
+algorithm B for T_B seconds, etc.)
+
+If for some reason you need to do runs with different timeouts, please
+contact us and we can hopefully arrange for a solution.
+
+Memory limits: another thing that can be a problem is that is how you
+are planning to enforce the memory limit. In the sequential portfolios,
+if algorithm A runs out of memory, of course we only want that algorithm
+to be killed, but not the complete portfolio. I think the scripts that I
+used for tracking memory usage at the last IPC wouldn't allow this
+(which wasn't a problem then, because there were no such portfolio
+planners), so some better solution is needed. How were you planning to
+enforce the memory limit?
+

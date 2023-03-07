@@ -1,0 +1,13 @@
+utilities.c: In function `init_act_vect':
+utilities.c:1415: warning: 'start_time' might be used uninitialized in this function
+scan-fct_pddl.y: conflicts: 44 shift/reduce, 2 reduce/reduce
+scan-ops_pddl.y: warning: 2 useless nonterminals and 4 useless rules
+scan-ops_pddl.y:211.20-32: warning: useless nonterminal: variable_star
+scan-ops_pddl.y:213.17-37: warning: useless nonterminal: timed_adl_effect_plus
+scan-ops_pddl.y:891.1-893.1: warning: useless rule: variable_star: /* empty */
+scan-ops_pddl.y:895.1-900.1: warning: useless rule: variable_star: VARIABLE variable_star
+scan-ops_pddl.y:1458.1-1461.1: warning: useless rule: timed_adl_effect_plus: timed_adl_effect
+scan-ops_pddl.y:1463.1-1467.1: warning: useless rule: timed_adl_effect_plus: timed_adl_effect timed_adl_effect_plus
+scan-ops_pddl.y: conflicts: 37 shift/reduce, 9 reduce/reduce
+scan-ops_pddl.y:1573.1-1581.1: warning: rule never reduced because of conflicts: binary_op: MINUS_TOK
+scan-ops_pddl.y:1725.1-7: warning: rule never reduced because of conflicts: d_value: num_exp

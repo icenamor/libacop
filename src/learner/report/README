@@ -1,0 +1,14 @@
+This directory contains some scripts and class definitions for easing
+the task to access the data generated and stored during the Seventh
+International Planning Competition
+
+=============================================================================
+
+Necessary packages:
+
+pyExcelerator - http://sourceforge.net/projects/pyexcelerator/
+                for generating microsoft excel files
+
+---
+Carlos Linares Lopez <carlos.linares@uc3m.es>
+

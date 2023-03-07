@@ -1,0 +1,8 @@
+Arvand uses LAMA's translator to translate
+STRIPS to SAS+ representation. Apparently 
+this translator is non-deterministic and generates
+different results each time used. This might 
+be related to the containers used in the preprocessor.
+Therefore, although this version of Arvand 
+uses a fixed random seed number,
+it still can generate non-deterministic results. 

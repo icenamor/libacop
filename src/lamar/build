@@ -1,0 +1,16 @@
+#!/bin/sh
+
+cd "$(dirname "$0")"
+ROOT=$PWD
+
+cd $ROOT/lamar/preprocess && \
+(make || exit 1)
+cd $ROOT/lamar/search && \
+(make release || exit 1)
+
+if [ $? -eq 0 ]; then
+	cd $ROOT/
+
+else 
+	exit 1
+fi
