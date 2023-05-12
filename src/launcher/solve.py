@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 __author__      = "Isabel Cenamor"
 __copyright__   = "Copyright 2014, Learning Portfolio Project"
-__email__ = "icenamor@inf.uc3m.es"
+__email__ = "icenamorg@gmail.com"
 
 # imports
 # -----------------------------------------------------------------------------
@@ -424,26 +424,8 @@ if __name__ == '__main__':
     accumulated_time = int(accumulated_time) + 1
     print "Parsers took " + str(accumulated_time) + " seconds\n"
 
-
     # run main portfolio
-    accumulated_time += run_portfolio (planners, timeouts, memory)
-    print "Main portfolio runs " + str(accumulated_time) + " seconds\n"
-
-    # some planner failed, therefore there is remaining time. Run default planner
-    if((accumulated_time < timelimit) and ((counter == 1) or ((counter > 1) and (not optimal_planning)))):
-        planners = ["sgplan"]
-        timeouts = [(timelimit - accumulated_time)]
-        accumulated_time += run_portfolio (planners, timeouts, memory)
-        print "Main portfolio plus default planner run " + str(accumulated_time) + " seconds (in total)\n"
-
-        # It is very rare.. It is possible that all planners failed: memory or there is a problem with the original problem/domain. We run blind planner with original_data
-        if((accumulated_time < timelimit) and ((counter == 1) or ((counter > 1) and (not optimal_planning)))):
-            planners = ["blind"]
-            timeouts = [(timelimit - accumulated_time)]
-            original_data = True
-            accumulated_time += run_portfolio (planners, timeouts, memory)
-            print "Main portfolio plus default planner plus blind planner run " + str(accumulated_time) + " seconds (in total)\n"
-
+  
 
 # Local Variables:
 # mode:python2.7
