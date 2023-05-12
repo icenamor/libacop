@@ -1,3 +1,0 @@
-#!/bin/bash
-
-"$(dirname "$0")"/sgplan522 "-o" "$1" "-f" "$2" "-out" "$3"
