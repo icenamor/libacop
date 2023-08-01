@@ -1,0 +1,20 @@
+1) Features phase
+- features/translate
+- features/preprocess
+- features/ff-learner
+- features/heuristics
+- search/downward (landmark features)
+- search-mercury/downward (mercury features)
+
+2) Join features and format test file
+
+3) Feature selection (delete some features are not usefull in my model)
+
+4) Ask clasification model 
+
+5) Parse file to add planners
+
+6) Assing same time per each planner
+
+4) Run planners secuencially  
+
