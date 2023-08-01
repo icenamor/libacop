@@ -1,0 +1,187 @@
+cd  planners/seq-agl-IBaCoP/src/blind
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+
+cd  planners/seq-agl-IBaCoP/src/fd-autotune-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-agl-IBaCoP/src/fd-autotune-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-agl-IBaCoP/src/fdss-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-agl-IBaCoP/src/fdss-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-agl-IBaCoP/src/lama-2011
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+
+cd  planners/seq-agl-IBaCoP2/src/blind
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-agl-IBaCoP2/src/fd-autotune-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-agl-IBaCoP2/src/fd-autotune-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-agl-IBaCoP2/src/fdss-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-agl-IBaCoP2/src/fdss-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-agl-IBaCoP2/src/lama-2011
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+
+cd  planners/seq-mco-IBaCoP/src/blind
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-mco-IBaCoP/src/fd-autotune-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-mco-IBaCoP/src/fd-autotune-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-mco-IBaCoP/src/fdss-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-mco-IBaCoP/src/fdss-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-mco-IBaCoP/src/lama-2011
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+
+cd  planners/seq-mco-IBaCoP2/src/blind
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-mco-IBaCoP2/src/fd-autotune-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-mco-IBaCoP2/src/fd-autotune-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-mco-IBaCoP2/src/fdss-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-mco-IBaCoP2/src/fdss-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-mco-IBaCoP2/src/lama-2011
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+
+cd  planners/seq-sat-IBaCoP/src/blind
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-sat-IBaCoP/src/fd-autotune-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-sat-IBaCoP/src/fd-autotune-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-sat-IBaCoP/src/fdss-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-sat-IBaCoP/src/fdss-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-sat-IBaCoP/src/lama-2011
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+
+cd  planners/seq-sat-IBaCoP2/src/blind
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-sat-IBaCoP2/src/fd-autotune-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-sat-IBaCoP2/src/fd-autotune-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-sat-IBaCoP2/src/fdss-1
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-sat-IBaCoP2/src/fdss-2
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+cd  planners/seq-sat-IBaCoP2/src/lama-2011
+vim plan
+delete line 27 #shift 2
+delete line 31 #shift
+
+
